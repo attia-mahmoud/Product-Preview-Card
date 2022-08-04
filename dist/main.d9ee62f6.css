@@ -329,7 +329,7 @@ body {
     width: 50%;
   }
   .container-card picture img {
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 10px 0px 0px 10px;
   }
   .container-card .container-content {
     padding: 2rem;
