@@ -1,0 +1,45 @@
+@use "../utilities/flow" as *;
+@use "../abstracts/breakpoints" as *;
+
+.container-card {
+  border-radius: 10px;
+  max-width: 70%;
+  @include flex(0rem, column, space-between, center);
+  picture {
+    img {
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
+  .container-content {
+    padding: 1.6rem;
+    @include flex(1rem, column, space-between, flex-start);
+  }
+  .container-price {
+    @include flex(1.5rem, row, space-between, center);
+    p {
+      text-decoration: line-through;
+    }
+  }
+
+  @include mq(large) {
+    @include flex(0rem, row, space-between, center);
+    max-width: 40rem;
+    picture {
+      img {
+        border-radius: 15px 0px 0px 15px;
+      }
+      width: 50%;
+    }
+    .container-content {
+      padding: 2rem;
+      width: 50%;
+      @include flex(1.8rem, column, space-between, flex-start);
+    }
+    h1 {
+      max-width: 10ch;
+    }
+    p {
+      max-width: 26ch;
+    }
+  }
+}

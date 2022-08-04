@@ -1,0 +1,20 @@
+@use "../utilities/flow" as *;
+@use "../abstracts/breakpoints" as *;
+
+button {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 7px;
+  border: none;
+  padding: 0.9rem 1rem;
+  img {
+    height: 1.2rem;
+  }
+  @include flex(0.7rem, row, center, center);
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: hsl(158, 75%, 20%);
+  }
+}
